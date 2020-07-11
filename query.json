@@ -1,0 +1,3 @@
+{
+    "query":"query {\r\n  repository(owner:\"rust-analyzer\", name:\"rust-analyzer\") {\r\n    releases(last:2,orderBy:{field:NAME, direction:ASC}) {\r\n      edges {\r\n        node {\r\n          releaseAssets(name:\"rust-analyzer.vsix\", last:3) {\r\n            edges {\r\n              node {\r\n                downloadUrl\r\n              }\r\n            }\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"
+}

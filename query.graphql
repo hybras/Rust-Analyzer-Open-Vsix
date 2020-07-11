@@ -1,0 +1,17 @@
+query {
+  repository(owner:"rust-analyzer", name:"rust-analyzer") {
+    releases(last:2,orderBy:{field:NAME, direction:ASC}) {
+      edges {
+        node {
+          releaseAssets(name:"rust-analyzer.vsix", last:3) {
+            edges {
+              node {
+                downloadUrl
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
