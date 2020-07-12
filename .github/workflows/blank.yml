@@ -36,3 +36,4 @@ jobs:
       with:
         pat: ${{ secrets.OPEN_VSX_TOKEN }}
         extensionFile: "rust-analyzer.vsix"
+        packagePath: ""
